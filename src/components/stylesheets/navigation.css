@@ -1,0 +1,24 @@
+.navBar {
+    display: flex;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    background-color: #d8ddde;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.navItem{
+    padding-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+#logo{
+    display: block;
+    max-width: 60px;
+    height: auto;
+    padding-left: 1em;
+}
+
+
+   
