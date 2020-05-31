@@ -5,15 +5,15 @@ import swatLogo from '../img/swatLogo.png';
  
 const Navigation = () => {
     return (
-       <div class = "navBar">
+       <div className = "navBar">
             <img src={swatLogo} id="logo" alt ="Swarthmore College Logo"/>
             <div id="links">
-                <NavLink class = "navItem" to="/"> Home</NavLink>
-                <NavLink class = "navItem" to="/getinvolved">Get Involved</NavLink>
-                <NavLink class = "navItem" to="/links">Links</NavLink>
-                <NavLink class = "navItem" to="/members">Lab Members</NavLink>
-                <NavLink class = "navItem" to="/research">Research</NavLink>
-                <NavLink class = "navItem" to="/teaching">Teaching</NavLink>
+                <NavLink className = "navItem" to="/"> Home</NavLink>
+                <NavLink className = "navItem" to="/getinvolved">Get Involved</NavLink>
+                <NavLink className = "navItem" to="/links">Links</NavLink>
+                <NavLink className = "navItem" to="/members">Lab Members</NavLink>
+                <NavLink className = "navItem" to="/research">Research</NavLink>
+                <NavLink className = "navItem" to="/teaching">Teaching</NavLink>
             </div>
             
        </div>
