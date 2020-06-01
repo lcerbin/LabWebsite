@@ -1,0 +1,12 @@
+.slideImages{
+    max-width: 50%;
+    height: auto;
+    align-self: center;
+}
+
+.Slideshow{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}

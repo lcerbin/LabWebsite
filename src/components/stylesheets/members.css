@@ -1,0 +1,9 @@
+.row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    margin-left: 25%;
+    overflow: hidden;
+}
