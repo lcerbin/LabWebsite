@@ -20,7 +20,7 @@ const Members = () => {
                     <MemberCard className = "card" phd = {false} name = "Jane Doe" picture = {image} email = "jdoe1@swarthmore.edu" projects = "Hydra Inversion" fun = "Running, jumping, and video games" animal = "Black-Footed Albatross"/>
                     <MemberCard className = "card" phd = {false} name = "John Doe" picture = {image} email = "jdoe1@swarthmore.edu" projects = "Hydra Inversion" fun = "Running, jumping, and video games" animal = "Black-Footed Albatross"/>
                 </div>
-            <h1 className = "edHead">Undergraduate Students</h1>
+            <h1 className = "edHead">Undergraduate Researchers</h1>
                 <div className = "table">
                     <MemberCard className = "card" phd = {false} name = "Jane Doe" picture = {image} email = "jdoe1@swarthmore.edu" projects = "Hydra Inversion" fun = "Running, jumping, and video games" animal = "Black-Footed Albatross"/>
                     <MemberCard className = "card" phd = {false} name = "John Doe" picture = {image} email = "jdoe1@swarthmore.edu" projects = "Hydra Inversion" fun = "Running, jumping, and video games" animal = "Black-Footed Albatross"/>

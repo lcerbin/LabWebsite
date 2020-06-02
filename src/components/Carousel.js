@@ -1,5 +1,5 @@
 import React from 'react'
-import Carousel from 'nuka-carousel'
+import Carousel from 'react-bootstrap'
 import image1 from '../img/slideshowimgs/img1.jpg'
 import image3 from '../img/slideshowimgs/img3.jpg'
 import image4 from '../img/slideshowimgs/img4.jpg'
@@ -18,10 +18,15 @@ export default class ImgCarousel extends React.Component{
                     naturalSlideHeight={100}
                     totalSlides={3}
                     isPlaying={true}
+                    infinite={true}
                 >
                     <Slider>
                         <Slide index={0}>
-                            <Image src={image1}></Image>
+                            <div className = "caption">
+                                <Image src={image1}></Image>
+                                <h3 className = "overlap">Biomechanics</h3>
+                                <p className = "overlap">Here are some words that will fit the caption. Hopefully it won't be longer than this.</p>
+                            </div>   
                         </Slide>
                         <Slide index={1}>
                             <Image src={image4}></Image>    
