@@ -2,3 +2,9 @@
     justify-content: center;
     display: flex;
 }
+
+.slides{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
