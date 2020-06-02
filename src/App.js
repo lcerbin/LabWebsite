@@ -7,6 +7,7 @@ import Members from './components/Members.js'
 import Research from './components/Research.js'
 import Teaching from './components/Teaching.js'
 import Navigation from './components/Navigation.js'
+import Publications from './components/Publications.js'
 
 
 
@@ -21,14 +22,15 @@ class App extends React.Component{
             <Route path="/getinvolved" component={GetInvolved} />
             <Route path="/links" component={Links} />
             <Route path="/members" component={Members} />
-            <Route path="/research" component={Research} /> 
+            <Route path="/research" component={Research} />
             <Route path="/teaching" component={Teaching} />
+            <Route path="/publications" component={Publications} />
           </Switch>
         </div>
-      </BrowserRouter>      
+      </BrowserRouter>
       )
     }
   }
-  
+
 
 export default App;
