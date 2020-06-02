@@ -9,11 +9,11 @@ const Navigation = () => {
             <img src={swatLogo} id="logo" alt ="Swarthmore College Logo"/>
             <div id="links">
                 <NavLink className = "navItem" to="/"> Home</NavLink>
-                <NavLink className = "navItem" to="/getinvolved">Get Involved</NavLink>
-                <NavLink className = "navItem" to="/links">Links</NavLink>
                 <NavLink className = "navItem" to="/members">Lab Members</NavLink>
                 <NavLink className = "navItem" to="/research">Research</NavLink>
                 <NavLink className = "navItem" to="/teaching">Teaching</NavLink>
+                <NavLink className = "navItem" to="/getinvolved">Get Involved</NavLink>
+                <NavLink className = "navItem" to="/links">Links</NavLink>
             </div>
             
        </div>

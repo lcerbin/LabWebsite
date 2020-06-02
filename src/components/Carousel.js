@@ -16,11 +16,11 @@ export default class ImgCarousel extends React.Component{
                 wrapAround = {true}
                 cellSpacing={20}
                 slidesToShow={1}
-                width = '50%'
+                framePadding = '10%'
                 >
-                    <img alt = '1' src={image1}/>
-                    <img alt = '3'  src={image3}/>
-                    <img alt = '4' src={image4}/>
+                    <img className = "image" alt = '1' src={image1}/>
+                    <img className = "image" alt = '3'  src={image3}/>
+                    <img className = "image" alt = '4' src={image4}/>
                 </Carousel>
             </div>
             

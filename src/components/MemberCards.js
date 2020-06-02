@@ -1,4 +1,6 @@
 import React, {setState} from 'react'
+import './stylesheets/members.css'
+import image from '../img/slideshowimgs/img1.jpg'
 
 export default class MemberCard extends React.Component{
     constructor(props){
@@ -14,7 +16,7 @@ export default class MemberCard extends React.Component{
             CV: props.CV,
             phd: props.phd,
             animal: props.animal,
-            picture: props.pictureLink,
+            picture: {image},
         }
     }
     render(){
@@ -24,18 +26,27 @@ export default class MemberCard extends React.Component{
         const project = this.state.projects;
         const fun = this.state.fun;
         const animal = this.state.animal;
+        const photo = this.state.picture;
         return(
-            <table>
-                <tr className = "image"><img src={this.state.picture} /></tr>
-                <tr className = "name">{name}{PhD ? ', PhD' : ''}</tr>
-                <tr className = "email">{email}</tr>
-                <tr classname = "header">My Research</tr>
-                <tr className = "body">{project}</tr>
-                <tr className = "header">Non-Science Fun:</tr>
-                <tr classname = "body">{fun}</tr>
-                <tr className = "header">Favorite Creature</tr>
-                <tr><button>{animal}</button></tr>
-            </table>
+            <div className = "card">
+                <table>
+                    <tr>
+                        <td>
+                            <img src={image} alt = "Picture of Luca"/>
+                        </td>
+                    </tr>
+                    <tr className = "image tableRow"></tr>
+                    <tr className = "name tableRow">{name}{PhD ? ', PhD' : ''}</tr>
+                    <tr className = "tableRow"><button className = "email" href={email}>Email</button></tr>
+                    <tr className = "header tableRow">My Research</tr>
+                    <tr className = "body tableRow">{project}</tr>
+                    <tr className = "header tableRow">Non-Science Fun</tr>
+                    <tr className = "body tableRow">{fun}</tr>
+                    <tr className = "header tableRow">Favorite Creature</tr>
+                    <tr className = "tableRow"><button className="body">{animal}</button></tr>
+                </table>
+            </div>
+            
         )
     }
 }

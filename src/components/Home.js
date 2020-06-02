@@ -10,7 +10,7 @@ export default class Home extends React.Component {
            <div className = "title">
            </div>
            <div className = "slides">
-              <ImgCarousel />
+              <ImgCarousel/>
            </div>
            <div className= "bodyContainer">
               <HomeBody/>
