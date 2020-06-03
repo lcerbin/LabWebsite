@@ -15,8 +15,7 @@ italic{
 }
 .container{
     margin-left: 40px;
-    width: 97%;
-    padding-right:10%;
+    width: 96%;
 }
 .sentences{
     text-align: left;
@@ -25,13 +24,68 @@ italic{
     padding-top: 15px;
 }
 .PDF{
-  background-color: maroon;
-  border: none;
-  color: white;
+  background-color: #74121d;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  color: #ffffff;
   padding:5px 10px;
+  margin-top: 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
   cursor: pointer;
+}
+.PDF:active {
+    transform: translateY(1px);
+    filter: saturate(150%);
+}
+.PDF:hover {
+    color: #74121d;
+    border-color: currentColor;
+    background-color: white;
+}
+.Head{
+    font-size: 3em;
+    font-weight: 300;
+    color: #74121d;
+    text-align: center;
+    padding-bottom: .6em;
+}
+.tableRow{
+   text-align: center;
+}
+.card{
+    display: flex;
+    border: 1px solid #D3D3D3;
+    flex-direction: column;
+    padding: 1em;
+    width: 310px;
+    border-radius: 7px
+}
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 7px;
+}
+.table{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 45px;
+}
+.names{
+   font-size: 16px;
+}
+.article{
+   font-size: 14px;
+   margin: 30px;
+}
+.journal{
+   font-size: 14px;
+   font-style: italic;
+   margin: 30px;
+   line-height: 26pt;
 }

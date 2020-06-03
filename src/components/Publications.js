@@ -1,9 +1,31 @@
 import React from 'react';
+import PublicationCard from './PublicationsCards'
+import image from '../img/slideshowimgs/img3.jpg'
 import './stylesheets/publications.css'
 
 const Publications = () => {
     return (
-       <div>
+      <div>
+           <h1 className = "Head">Neurotoxicology</h1>
+               <div className = "table">
+                   <PublicationCard className = "card" names = "D. Ireland, V. Bochenek, D. Chaiken, C. Rabeler, S. Onoe, A. Soni, and E.-M. S. Collins (2020)" picture = {image} link = "jdoe@swarthmore.edu" linkText = "PDF" articleTitle = "Dugesia japonica is the best suited of three planarian species for high-throughput toxicology screening" journal="Chemosphere"/>
+                   <PublicationCard className = "card" names = "Z. Sabry, A. Ho, D. Ireland, C. Rabeler, O. Cochet-Escartin, and E.-M. S. Collins (2019)" picture = {image} link = "jdoe@swarthmore.edu" linkText = "PDF" articleTitle = "Pharmacological or genetic targeting of Transient Receptor Potential (TRP) channels can disrupt the planarian escape response" journal="Plos ONE"/>
+                   <PublicationCard className = "card" names = "S. Zhang, D. Ireland, N. Sipes, M. Behl, and E.-M. S. Collins (2019)" picture = {image} link = "jdoe@swarthmore.edu" linkText = "PDF" articleTitle = "Screening for neurotoxic potential of 15 ﬂame retardants using freshwater planarians" journal="Neurotoxicology and Teratology"/>
+               </div>
+               <div className = "table">
+                   <PublicationCard className = "card" names = "D. Ireland, V. Bochenek, D. Chaiken, C. Rabeler, S. Onoe, A. Soni, and E.-M. S. Collins (2020)" picture = {image} link = "jdoe@swarthmore.edu" linkText = "PDF" articleTitle = "Dugesia japonica is the best suited of three planarian species for high-throughput toxicology screening" journal="Chemosphere"/>
+                   <PublicationCard className = "card" names = "Z. Sabry, A. Ho, D. Ireland, C. Rabeler, O. Cochet-Escartin, and E.-M. S. Collins (2019)" picture = {image} link = "jdoe@swarthmore.edu" linkText = "PDF" articleTitle = "Pharmacological or genetic targeting of Transient Receptor Potential (TRP) channels can disrupt the planarian escape response" journal="Plos ONE"/>
+                   <PublicationCard className = "card" names = "S. Zhang, D. Ireland, N. Sipes, M. Behl, and E.-M. S. Collins (2019)" picture = {image} link = "jdoe@swarthmore.edu" linkText = "PDF" articleTitle = "Screening for neurotoxic potential of 15 ﬂame retardants using freshwater planarians" journal="Neurotoxicology and Teratology"/>
+               </div>
+           <h1 className = "Head">Graduate Students</h1>
+               <div className = "table">
+                   <PublicationCard className = "card" names = "Jane Doe, EM, (2012)" picture = {image} link = "jdoe@swarthmore.edu" linkText = "PDF" articleTitle = "Running, jumping, and video games"/>
+               </div>
+
+
+
+
+
           <h1 className = "title">Publications</h1>
 
           <h3 className = "title">Neurotoxicology and Planarian Behavior</h3>
