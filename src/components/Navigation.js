@@ -11,7 +11,7 @@ const Navigation = () => {
                 <NavLink className = "navItem" to="/"> Home</NavLink>
                 <NavLink className = "navItem" to="/members">Lab Members</NavLink>
                 <NavLink className = "navItem" to="/research">Research</NavLink>
-                <NavLink className = "navItem" to="/teaching">Teaching</NavLink>
+                <NavLink className = "navItem" to="/teaching">Teaching and Outreach</NavLink>
                 <NavLink className = "navItem" to="/publications">Publications</NavLink>
             </div>
 

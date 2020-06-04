@@ -1,0 +1,29 @@
+p{
+  padding-left: 40px;
+  padding-right: 600px;
+  padding-bottom: 20px;
+}
+a{
+  margin-left: 60px;
+
+  font-size: 20px;
+}
+a:link{
+  color: #74121d;
+}
+a:visited{
+  color: #74121d;
+}
+under{
+  text-decoration: underline;
+}
+italic{
+  font-style: italic
+}
+.Header{
+    font-size: 3em;
+    font-weight: 300;
+    color: #74121d;
+    text-align: center;
+    padding-bottom: .6em;
+}
