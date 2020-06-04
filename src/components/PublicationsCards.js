@@ -20,6 +20,7 @@ export default class PublicationCard extends React.Component{
         const linkText = this.state.linkText;
         const photo = this.state.picture;
         const journal = this.state.journal;
+        console.log(this.props)
         return(
             <div className = "card">
                 <table>

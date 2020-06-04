@@ -23,29 +23,17 @@ var sectionStyle = {
     backgroundImage: `url(${background1})`
   };
 
-const HomeBody = () => {
+const AboutUs = () => {
     return(
         <div style = {sectionStyle}>
             <table className = "containers">
                 <tr>
                     <td className = "introHeading">About Us</td>
                     <td className = "introSentences">{intro}</td>
-                    <td className = 'introSentences'>{introTwo}</td>
                 </tr>
-            </table>
-            <table className = "containers projectDetails">
-                <tr>
-                        <td className = "heading">Project Planarian</td>
-                        <td className = "sentences">{projectOne}</td>
-                        <td className = "heading">Project Hydra</td>
-                        <td className = "sentences">{projectTwo}</td>
-                        <td className = "heading">Project Analysis</td>
-                        <td className = "sentences">{projectThree}</td>
-                </tr>
-                
             </table>
         </div>
     )
 }
 
-export default HomeBody;
+export default AboutUs;
