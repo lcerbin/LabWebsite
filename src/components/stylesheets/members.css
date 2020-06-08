@@ -3,10 +3,6 @@
     justify-content: space-evenly;
 }
 
-.card{
-    overflow: hidden;
-}
-
 .name{
     font-size: 2em;
     font-weight: 300;
@@ -19,29 +15,33 @@
 }
 
 .header{
-    font-weight: bold;
-    font-size: .9em;
+    font-weight: 300;
+    color: #74121d;
+    font-size: 1.2em;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 .body{
     font-size: .8em;
 }
+
 button{
     text-decoration: none;
 
   /* create a small space when buttons wrap on 2 lines */
-  margin: 2px 0;
+    margin: 2px 0;
 
   /* invisible border (will be colored on hover/focus) */
-  border: solid 1px transparent;
-  border-radius: 4px;
+    border: solid 1px transparent;
+    border-radius: 4px;
 
   /* size comes from text & padding (no width/height) */
-  padding: 0.5em 1em;
+    padding: 0.5em 1em;
 
   /* make sure colors have enough contrast! */
-  color: #ffffff;
-  background-color: #74121d;
+    color: #ffffff;
+    background-color: #74121d;
 }
 
 button:active {
@@ -54,10 +54,6 @@ button:hover {
     border-color: currentColor;
     background-color: white;
   }
-
-.tableRow{
-    text-align: left;
-}
 
 .table{
     display: flex;
@@ -73,7 +69,9 @@ img{
 .card{
     display: flex;
     flex-direction: column;
+    justify-content: left;
     padding-bottom: 2em;
+    overflow: hidden;
 }
 
 .edHead{
