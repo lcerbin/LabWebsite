@@ -1,7 +1,20 @@
+.classPreq{
+   text-align: left;
+   width: 100%;
+}
+.prereq{
+   text-align: left;
+   vertical-align: top;
+   line-height: 25px;
+   padding-left: 60px;
+   padding-right: 20px;
+   width: 400px;
+}
 .nameClass{
-  margin-left: 60px;
   font-size: 20px;
-  color: #74121d;
+  color: #74121d; 
+  padding-top: 30px;
+  margin-left: 40px;
 }
 under{
   text-decoration: underline;
@@ -14,10 +27,10 @@ italic{
     font-weight: 300;
     color: #74121d;
     text-align: center;
-    padding-bottom: .6em;
+    padding-bottom: .2em;
 }
 .class_text{
     padding-left: 60px;
-    padding-right: 600px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
+    padding-top: 13px;
 }

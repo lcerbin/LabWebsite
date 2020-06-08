@@ -1,5 +1,4 @@
 import React, {setState} from 'react'
-import image from '../img/slideshowimgs/img1.jpg'
 export default class PublicationCard extends React.Component{
     constructor(props){
         super(props)
@@ -8,32 +7,34 @@ export default class PublicationCard extends React.Component{
             names: props.names,
             articleTitle: props.articleTitle,
             link: props.link,
-            linkText: props.linkText,
-            picture: {image},
+            picture: props.picture,
             journal: props.journal,
+            news: props.news
         }
     }
     render(){
         const names = this.state.names;
         const articleTitle = this.state.articleTitle;
         const link = this.state.link;
-        const linkText = this.state.linkText;
         const photo = this.state.picture;
         const journal = this.state.journal;
+        const news = this.state.news;
         console.log(this.props)
         return(
             <div className = "card">
                 <table>
                     <tr>
                         <td>
-                            <img src={image} alt = "Picture"/>
+                            <img src={photo} alt = "Picture"/>
                         </td>
                     </tr>
-                    <tr className = "image tableRow"></tr>
                     <tr className = "names tableRow">{names}</tr>
                     <tr className = "journal tableRow">{journal}</tr>
                     <tr className = "article tableRow">{articleTitle}</tr>
-                    <tr className = "link tableRow"><button className = "PDF" href={link}>{linkText}</button></tr>
+                    <p></p>
+                    <tr className = "news tableRow">{news}</tr>
+                    <tr className = "link tableRow"><button className = "PDF" href="{link}">Link</button></tr>
+                    <tr><form action={link} target="blank"><button className="PDF">Link</button></form></tr>
                 </table>
             </div>
 
