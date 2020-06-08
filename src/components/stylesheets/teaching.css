@@ -1,17 +1,6 @@
-p{
-  padding-left: 40px;
-  padding-right: 600px;
-  padding-bottom: 20px;
-}
-a{
+.nameClass{
   margin-left: 60px;
-
   font-size: 20px;
-}
-a:link{
-  color: #74121d;
-}
-a:visited{
   color: #74121d;
 }
 under{
@@ -26,4 +15,9 @@ italic{
     color: #74121d;
     text-align: center;
     padding-bottom: .6em;
+}
+.class_text{
+    padding-left: 60px;
+    padding-right: 600px;
+    padding-bottom: 30px;
 }
