@@ -1,0 +1,77 @@
+.researchTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: #ffffff;
+    font-size: 4.5em;
+    opacity: 75%;
+    border-bottom: 1px solid #ffffff;
+    width: 25%;
+}
+
+.TandT{
+    padding-bottom: 15%;
+    padding-left: 10%;
+}
+
+.research{
+    font-weight: 300;
+    font-style: normal;
+    padding-bottom: 0%;
+    margin-bottom: 0px;
+}
+
+.subtitles{
+    font-size: 2em;
+    opacity: 75%;
+    color: #ffffff;
+}
+
+.projects{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.banner{
+    margin-top: 7.5%;
+    padding-bottom: 25%;
+}
+
+.researchSection{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2.5%;
+    padding-bottom: 5%;
+    color: #74121d;
+}
+
+.projectDesc{
+    padding-right: 10%;
+    font-style: normal;
+    font-weight: 300;
+
+}
+
+.project{
+    padding-left: 10%;
+    padding-right: 2%;
+    margin-right: 2%;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3em;
+    border-right: 1px solid #74121d;
+}
+
+.imageRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.researchImage{
+    width: 30%;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+}
