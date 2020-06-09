@@ -6,8 +6,10 @@ import Links from './components/Links.js'
 import Members from './components/Members.js'
 import Research from './components/Research.js'
 import Teaching from './components/Teaching.js'
+import Outreach from './components/Outreach.js'
 import Navigation from './components/Navigation.js'
 import Publications from './components/Publications.js'
+import InTheNews from './components/InTheNews.js'
 
 
 
@@ -24,7 +26,9 @@ class App extends React.Component{
             <Route path="/members" component={Members} />
             <Route path="/research" component={Research} />
             <Route path="/teaching" component={Teaching} />
+            <Route path="/outreach" component={Outreach} />
             <Route path="/publications" component={Publications} />
+            <Route path="/inNews" component={InTheNews} />
           </Switch>
         </div>
       </BrowserRouter>
