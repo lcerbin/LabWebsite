@@ -2,10 +2,11 @@ import React from 'react';
 import ImgCarousel from './Carousel.js'
 import './stylesheets/home.css'
 import AboutUs from './HomeBody.js'
-import image from '../img/slideshowimgs/img1.jpg'
+import image from '../img/slideshowimgs/img3.jpg'
 import Pub from './PublicationsCards' 
 import Planarian from './Planarian.js'
 import Hydra from './Hydra.js'
+import logo from '../img/Logo.JPG'
 
 export default class Home extends React.Component {
    constructor(props){
@@ -40,20 +41,8 @@ export default class Home extends React.Component {
                <div className = "body">
                   <AboutUs/>
                </div>
-               <img className = "img" src={image}/>
+               <img className = "img" src={logo}/>
            </div>
-           <div className= "bodyContainer">
-               <img className = "img" src={image}/>
-               <div className = "body">
-                  <Planarian/>
-               </div>
-           </div>
-           <div className= "bodyContainer">
-               <div className = "body">
-                  <Hydra/>
-               </div>
-               <img className = "img" src={image}/>
-            </div>
             <div className= "title">
                <h3 className="header">Highlighted Articles</h3>
             </div>
@@ -62,10 +51,11 @@ export default class Home extends React.Component {
               <div key = {index} className="row">
                  {row.map((article, secIndex) => (
                     <Pub key = {secIndex + 100} 
+                    className = "card"
                     names = {article.names} 
                     articleTitle = {article.articleTitle} 
                     link = {article.link} 
-                    photo = {article.photo}
+                    picture = {article.picture}
                     journal = {article.journal}
                     linkText = {article.linkText}
                      />

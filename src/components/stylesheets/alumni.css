@@ -1,0 +1,17 @@
+.alumRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.alumCol{
+    width: 12%;
+}
+
+.alumFont{
+    font-style: normal;
+    font-weight: 300;
+    color: #74121d;
+    font-size: 1.2em;
+}

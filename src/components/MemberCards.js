@@ -17,6 +17,7 @@ export default class MemberCard extends React.Component{
             phd: props.phd,
             animal: props.animal,
             picture: {image},
+            undergrad: props.undergrad,
         }
     }
     render(){
@@ -40,11 +41,10 @@ export default class MemberCard extends React.Component{
                         <tr className = "tableRow"><button className = "email" href={email}>Email</button></tr>
                         <tr className = "header tableRow">My Research</tr>
                         <tr className = " tableRow">{project}</tr>
-                        <tr className = "header tableRow">My Hobbies</tr>
+                        <tr className = "header tableRow">Non-Science Fun</tr>
                         <tr className = " tableRow">{fun}</tr>
-                        <tr className = "header tableRow">Favorite Creature</tr>
+                        <tr className = "header tableRow">Favorite Lab Pet</tr>
                         <tr className = "tableRow"><button>{animal}</button></tr>
-                    
                 </table>
             </div>
             

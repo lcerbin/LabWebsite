@@ -5,7 +5,6 @@ import Biomechanics from './researchConstants/Biomechanics';
 import Population from './researchConstants/PopDynamics';
 import Education from './researchConstants/Education';
 import Behavior from './researchConstants/BehaviorAndNeuro';
-
 import {Link} from 'react-scroll';
 
 const text = "We look at Hydra, as not only can they regenerate from small tissue pieces, but they can also regenerate from cell aggregates after disintegration into individual cells. We can study the biomechanics of this process of self-organization for insights into development. We also study the biomechanics of Hydra’s feeding response, as there are large epithelial deformations during both feeding and regeneration that allow us to look at epithelial mechanics. We use experimental tools and image analysis to characterize both processes and develop computational and analytical models to explain them" +
@@ -36,7 +35,7 @@ const Research = () => {
                                     duration={500}
                                     className="projects"
                                 >
-                                    Mechanics
+                                    Biomechanics
                                 </Link>
                             </h3>
                             <h3>  

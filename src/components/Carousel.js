@@ -17,21 +17,12 @@ export default class ImgCarousel extends React.Component{
                 <CarouselProvider
                     naturalSlideWidth={100}
                     naturalSlideHeight={100}
-                    totalSlides={5}
+                    totalSlides={4}
                     isPlaying={true}
                     infinite={true}
                 >
                     <Slider>
                         <Slide index={0}>
-                            <div className = "caption">
-                                <Image src={logo}></Image>
-                                <div className = "text-block">
-                                    <h3 className = "overlap">Collin's Laboratory</h3>
-                                    <p className = "overlap">Currently, we study Hydra and planarians, which are both famous for their regenerative capabilities: they can be cut in many pieces and each piece will give rise to an entire new animal! </p>
-                                </div>
-                            </div>   
-                        </Slide>
-                        <Slide index={1}>
                             <div className = "caption">
                                 <Image src={image1}></Image>
                                 <div className = "text-block">
@@ -41,7 +32,7 @@ export default class ImgCarousel extends React.Component{
                                 
                             </div>   
                         </Slide>
-                        <Slide index={2}>
+                        <Slide index={1}>
                         <div className = "caption">
                             <Image src={image4}></Image>
                             <div className = "text-block">
@@ -50,7 +41,7 @@ export default class ImgCarousel extends React.Component{
                             </div>
                         </div>     
                         </Slide>
-                        <Slide index={3}>
+                        <Slide index={2}>
                         <div className="caption">
                             <Image src={image3}></Image>
                             <div className = "text-block">
@@ -59,7 +50,7 @@ export default class ImgCarousel extends React.Component{
                             </div>
                         </div>   
                         </Slide>
-                        <Slide index={4}>
+                        <Slide index={3}>
                         <div className="caption">
                             <Image src={image4}></Image>
                             <div className = "text-block">
@@ -69,7 +60,6 @@ export default class ImgCarousel extends React.Component{
                         </div>   
                         </Slide>
                     </Slider>
-                
                 </CarouselProvider>
             </div>
         )
