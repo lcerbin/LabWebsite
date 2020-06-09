@@ -105,6 +105,20 @@ img{
     font-weight: 300;
     color: #74121d;
     text-align: left;
-    padding-left: 50px;
+    padding-left: 1.4em;
     padding-top: 1em;
+}
+.Head3{
+    font-size: 2.7em;
+    font-weight: 300;
+    color: #74121d;
+    text-align: left;
+    padding-left: 1.4em;
+    padding-top: 0em;
+}
+.undergradsState{
+    text-align: left;
+    padding-top: 2em;
+    padding-left: 3em;
+    font-size: 1.1em;
 }

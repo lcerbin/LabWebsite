@@ -1,0 +1,13 @@
+under{
+  text-decoration: underline;
+}
+italic{
+  font-style: italic
+}
+.Header{
+    font-size: 3em;
+    font-weight: 300;
+    color: #74121d;
+    text-align: center;
+    padding-bottom: .2em;
+}
