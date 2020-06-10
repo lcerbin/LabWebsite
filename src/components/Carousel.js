@@ -3,6 +3,9 @@ import Carousel from 'react-bootstrap'
 import image1 from '../img/slideshowimgs/img1.jpg'
 import image3 from '../img/slideshowimgs/img3.jpg'
 import image4 from '../img/slideshowimgs/img4.jpg'
+import biomechanics from '../img/slideshowimgs/Biomechanics.png'
+import neurotox from '../img/slideshowimgs/neurotox.png'
+import populationDynamics from '../img/slideshowimgs/population_dynamics.png'
 import logo from '../img/Logo.JPG'
 import './stylesheets/slides.css'
 import SlideShow from './SlideShow'
@@ -24,7 +27,7 @@ export default class ImgCarousel extends React.Component{
                     <Slider>
                         <Slide index={0}>
                             <div className = "caption">
-                                <Image src={image1}></Image>
+                                <Image src={biomechanics}></Image>
                                 <div className = "text-block">
                                     <h3 className = "overlap">Biomechanics</h3>
                                     <p className = "overlap">How do structure and function influence development and regeneration?</p>
@@ -34,7 +37,7 @@ export default class ImgCarousel extends React.Component{
                         </Slide>
                         <Slide index={1}>
                         <div className = "caption">
-                            <Image src={image4}></Image>
+                            <Image src={neurotox}></Image>
                             <div className = "text-block">
                                 <h3 className = "overlap">Behavior and Neurotoxicology</h3>
                                 <p className = "overlap">How is behavior controlled by the brain and can we use behavioral readouts to understand brain function in development, aging, and disease?</p> 
@@ -43,7 +46,7 @@ export default class ImgCarousel extends React.Component{
                         </Slide>
                         <Slide index={2}>
                         <div className="caption">
-                            <Image src={image3}></Image>
+                            <Image src={populationDynamics}></Image>
                             <div className = "text-block">
                                 <h3 className = "overlap">Population Dynamics</h3>
                                 <p className = "overlap">How do you create diversity in an asexual organism?</p>

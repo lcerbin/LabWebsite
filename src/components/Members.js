@@ -2,6 +2,7 @@ import React from 'react';
 import MemberCard from './MemberCards'
 import Alumni from './Alumni'
 import image from '../img/slideshowimgs/img3.jpg'
+
 import './stylesheets/members.css'
 import PetCard from './PetCard'
  
