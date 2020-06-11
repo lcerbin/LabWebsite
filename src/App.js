@@ -10,6 +10,8 @@ import Outreach from './components/Outreach.js'
 import Navigation from './components/Navigation.js'
 import Publications from './components/Publications.js'
 import InTheNews from './components/InTheNews.js'
+import Supporters from './components/Supporters.js'
+
 
 
 
@@ -29,6 +31,7 @@ class App extends React.Component{
             <Route path="/outreach" component={Outreach} />
             <Route path="/publications" component={Publications} />
             <Route path="/inNews" component={InTheNews} />
+            <Route path="/supporters" component={Supporters} />
           </Switch>
         </div>
       </BrowserRouter>

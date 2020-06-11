@@ -1,0 +1,76 @@
+.title{
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2em;
+    color: #74121d;
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+.group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+    margin-left: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.topimg{
+    padding-left: 10%;
+    max-width: 80%;
+    padding-bottom: 5%;
+    border-radius: 0%;
+}
+
+.link{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1em;
+    color: #74121d;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.Scontainer{
+    margin-left: 10%;
+}
+
+.description{
+    max-width: 80%;
+    color: #74121d;
+    font-weight: 300;
+}
+
+.Srow{
+    display: flex;
+    padding-bottom: 3%;
+}
+
+.logo{
+    width: 20%;
+    padding-right: 5%;
+}
+
+.labs{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5em;
+    color: #74121d;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.collabPics{
+    max-width: 12%;
+    padding-right: 5%;
+}
