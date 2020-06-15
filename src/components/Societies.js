@@ -6,18 +6,19 @@ const Society = (props) => {
     const description = props.description
     const link = props.link
     return(
-        <div className="Scontainer">
-            <div className="Srow">
-                <div className="logo">
-                    <img src={logo} alt={society}/>
-                </div>
-                <div className="col">
-                    <h5 className="subtitle">{society}</h5>
-                    <h6 className="link"><a href={link}>{link}</a></h6>
-                    <p className="description">{description}</p>
+            <div className="Scontainer">
+                <div className="Srow">
+                    <div className="logo">
+                        <img src={logo} alt={society}/>
+                    </div>
+                    <div className="col">
+                        <h5 className="subtitle">{society}</h5>
+                        <h6 className="link"><a href={link}>{link}</a></h6>
+                        <p className="description">{description}</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        
         
     )
 }

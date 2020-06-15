@@ -43,8 +43,6 @@ export default class MemberCard extends React.Component{
                         <tr className = " tableRow">{project}</tr>
                         <tr className = "header tableRow">Non-Science Fun</tr>
                         <tr className = " tableRow">{fun}</tr>
-                        <tr className = "header tableRow">Favorite Lab Pet</tr>
-                        <tr className = "tableRow"><button>{animal}</button></tr>
                 </table>
             </div>
             

@@ -81,3 +81,16 @@ img{
     text-align: center;
     padding-bottom: 1em;
 }
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+.emCard{
+    display: flex;
+    border: 1px solid #D3D3D3;
+    flex-direction: column;
+    padding: 1em;
+    width: 40%;
+    border-radius: 7px
+}

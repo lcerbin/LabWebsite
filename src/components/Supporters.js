@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link, Element} from 'react-scroll';
 import './stylesheets/supporters.css'
 import image from '../img/slideshowimgs/img1.jpg'
 import APSLogo from '../img/Logos/apslogo.gif'
@@ -24,28 +25,48 @@ export default function Supporters (){
     const text = "We look at Hydra, as not only can they regenerate from small tissue pieces, but they can also regenerate from cell aggregates after disintegration into individual cells."
     return(
         <div>
-            <div className="center">
+            <div>
                 <h1 className="title">Lab Supporters</h1>
                 <div className="group">
-                    <h2 className="subtitle">Societies</h2>
-                    <h2 className="subtitle">Collaborators</h2>
-                    <h2 className="subtitle">Grants</h2>
+                    <h2 className="subtitle">
+                        <Link to="societies"
+                            smooth={true}
+                            duration={1000}
+                        >
+                            Societies
+
+                        </Link>
+                    </h2>
+                    <h2 className="subtitle">
+                        <Link to="collabs" smooth={true} duration={1000}>
+                            Collaborators
+                        </Link>
+                    </h2>
+                    <h2 className="subtitle">
+                        <Link to="grants" smooth={true} duration={1000}>
+                            Grants
+                        </Link>
+                    </h2>
                 </div>
                 <div className="topimg">
                     <img className = "center" src={image}/>
                 </div>
             </div>
-
-            <div className='center'>
-                <h2 className="title">Societies</h2>
-            </div>
+            <Element name="societies">
+                <div className='center'>
+                    <h2 className="title">Societies</h2>
+                </div>
+            </Element>
+            
                 <Society logo={APSLogo} society="APS" link="https://www.aps.org/units/dbp/" description={text}/>
                 <Society logo={ASCCTLogo} society="ASCCT" link="https://www.ascctox.org/" description={text}/>
                 <Society logo={BiophysLogo} society="Biophysical Society" link="https://www.biophysics.org/" description={text}/>
                 <Society logo={SoTLogo} society="Society for Toxicology" link="https://www.toxicology.org/" description={text}/>
-            <div className='center'>
-                <h2 className="title">Collaborators</h2>
-            </div>
+            <Element name="collabs">
+                <div className='center'>
+                    <h2 className="title">Collaborators</h2>
+                </div>
+            </Element>
             <div>
                 <Collabs name="Robert Steele" labName="The Steele Lab" labURL="http://polyp.biochem.uci.edu/wiki/index.php/Main_Page" picture={Rob}/>
                 <Collabs name="Patrick Diamond" labName="Fusion and Astrophysical Plasma Physics" labURL="https://fapp.ucsd.edu/index.html" picture={Patrick}/>
@@ -53,9 +74,11 @@ export default function Supporters (){
                 <Collabs name="Karl Willert" labName="The Willert Lab" labURL="https://www.willertlab.org/" picture={Karl}/>
                 <Collabs name="William Kristan" labName="The Kristan Lab" labURL="https://labs.biology.ucsd.edu/kristan/Kristan_lab_home.html" picture={William}/>
             </div>
-            <div className='center'>
-                <h2 className="title">Grants</h2>
-            </div>
+            <Element name="grants">
+                <div className='center'>
+                    <h2 className="title">Grants</h2>
+                </div>
+            </Element>
             <div>
                 <Grants orgName="NIH" orgURL="https://www.niehs.nih.gov/" description={text} logo={NIH}/>
                 <Grants orgName="NSF" orgURL="https://www.niehs.nih.gov/" description={text} logo={NSF}/>

@@ -2,6 +2,7 @@ import React from 'react';
 import MemberCard from './MemberCards'
 import Alumni from './Alumni'
 import image from '../img/slideshowimgs/img3.jpg'
+import EMCard from './EMCard'
 
 import './stylesheets/members.css'
 import PetCard from './PetCard'
@@ -11,6 +12,10 @@ const Members = () => {
     const doubleMinor = ["Applied Math", "English"]
     return (
        <div>
+           <h1 className="edHead">Lab Head</h1>
+           <div className="center">
+                <EMCard className="card" phd={true} name="Eva-Maria Collins" picture={image} email="ecollins1@swarthmore.edu" fun="Doing stuff :)" aboutMe="Insert one or two sentences about Eva-Maria's research, career, philosophy, etc."/>
+           </div>
             <h1 className = "edHead">Postdocs</h1>
                 <div className = "table">
                     <MemberCard className = "card" phd = {true} name = "Jane Doe" picture = {image} email = "jdoe@swarthmore.edu" projects = "Hydra Inversion" fun = "Running, jumping, and video games" animal = "Black-Footed Albatross"/>
