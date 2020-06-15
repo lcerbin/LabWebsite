@@ -2,12 +2,42 @@ under{
   text-decoration: underline;
 }
 italic{
-  font-style: italic
+  font-style: italic;
 }
 .Header{
     font-size: 3em;
     font-weight: 300;
     color: #74121d;
     text-align: center;
-    padding-bottom: .2em;
+    padding-bottom: .1em;
+}
+.undergradtext{
+    text-align: left;
+    font-size: 1.2em;
+}
+.contact{
+    text-align: center;
+    line-height: 1.5em;
+}
+.contactInfo{
+    text-align: center;
+    color: #74121d;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding-top: 0em;
+}
+.picLayout{
+    width: 94%;
+    margin-left: 0em;
+    margin-right: 2em;
+}
+.labpicnic{
+    max-width: 85%;
+    text-align: center;
+}
+.martin{
+    max-width: 70%;
+}
+.layMartin{
+    text-align: center;
 }

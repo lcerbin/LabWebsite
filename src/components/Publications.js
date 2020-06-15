@@ -43,7 +43,7 @@ const Publications = () => {
                                     />
                </div>
 
-          <p className = "undergradsState">The following is a complete list of publications. Undergraduate authors are underlined:</p>
+          <p className = "undergradsState">The following is a complete list of publications. Undergraduate and student authors are underlined:</p>
           <h3 className = "Head3">Neurotoxicology and Planarian Behavior</h3>
           <table className = "container">
               <tr>

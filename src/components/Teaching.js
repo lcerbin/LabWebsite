@@ -76,9 +76,7 @@ const Teaching = () => {
               <td className = "prereq"><b>Prerequisites</b><br></br>At least one of:  BIOL 027, BIOL 022, BIOL 029, or with permission of instructor.<br></br>Recommended:  STAT 021</td>
           </tr>
       </table>
-
-      <h1 className = "Header">Outreach</h1>
-       </div>
+      </div>
     );
 }
 
