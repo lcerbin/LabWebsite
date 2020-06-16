@@ -1,11 +1,31 @@
 import React from 'react';
 import './stylesheets/getinvolved.css'
+import Martin from '../img/GetInvolved/Martin_Hall_Swat.jpg'
+import People from '../img/GetInvolved/lab_picnic.jpg'
+
 
 const GetInvolved = () => {
     return (
        <div>
           <h1 className = "Header">Get Involved</h1>
-           <p>Get Involved page body content</p>
+          <table className = "picLayout">
+            <img className="labpicnic" src={People} alt="Lab Picnic"/>
+            <p className="joinInfo">If you are an undergraduate student in Physics, Biology, Computer Science or Engineering, and want to join the lab,
+              email Eva-Maria to arrange for a short meeting to discuss available projects.<br/><br/>
+              We also have an opening for a postdoctoral researcher. The position requires
+               a PhD in toxicology, pharmacology, computational biology, neurobiology, biomedical engineering, molecular biology, or closely related field
+              (see <a href="https://www.linkedin.com/jobs/view/post-doctoral-fellow-neurotoxicology-at-swarthmore-college-1849379664/">job posting
+              </a> for more information).</p>
+              <img className="martin" src={Martin} alt="Martin Hall" />
+          </table>
+
+           <p className="contactInfo">Contact Information:</p>
+           <p className="contact"><a href="mailto:ecollin3@swarthmore.edu">ecollin3@swarthmore.edu</a><br></br>
+           Phone: (610) 690-5380 <br></br>
+           Office: Martin 202 <br></br>
+           Swarthmore College <br></br>
+           Swarthmore, PA 19081</p>
+
        </div>
     );
 }
