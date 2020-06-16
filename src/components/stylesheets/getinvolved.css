@@ -11,9 +11,26 @@ italic{
     text-align: center;
     padding-bottom: .1em;
 }
-.undergradtext{
-    text-align: left;
-    font-size: 1.2em;
+.joinInfo{
+    padding-top:1.5em;
+}
+.picLayout{
+    margin: 5em;
+    margin-bottom: 0em;
+    margin-top: 1em;
+    width: 88%;
+    border-collapse:collapse;
+}
+.labpicnic{
+    width: 40%;
+    text-align: center;
+    float: left;
+    margin-right: 3em;
+}
+.martin{
+    width: 56%;
+    float: right;
+    margin-top:2.5em;
 }
 .contact{
     text-align: center;
@@ -24,20 +41,4 @@ italic{
     color: #74121d;
     font-weight: 500;
     font-size: 1.1em;
-    padding-top: 0em;
-}
-.picLayout{
-    width: 94%;
-    margin-left: 0em;
-    margin-right: 2em;
-}
-.labpicnic{
-    max-width: 85%;
-    text-align: center;
-}
-.martin{
-    max-width: 70%;
-}
-.layMartin{
-    text-align: center;
 }
