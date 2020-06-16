@@ -11,3 +11,24 @@ italic{
     text-align: center;
     padding-bottom: .2em;
 }
+
+.outreachCard{
+  border-radius: 7px;
+  border:1px solid #74121d;
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  margin-bottom: 5%;
+}
+
+.outreachImg{
+  width: 50%;
+}
+
+.desc{
+  color: #74121d;
+  font-weight: 300;
+  max-width: 80%;
+}

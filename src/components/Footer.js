@@ -23,15 +23,15 @@ const Footer = () => {
             <div className="middle">
                 <h5 className='footerTitle'>Site Links</h5>
                 <ul className="bottomRouter">
-                    <li className="footerWords"><NavLink to="/">Home</NavLink></li>
-                    <li className="footerWords"><NavLink to="/members">Members</NavLink></li>
-                    <li className="footerWords"><NavLink to="/research">Research</NavLink></li>
-                    <li className="footerWords"><NavLink to="/publications">Publications</NavLink></li>
-                    <li className="footerWords"><NavLink to="/teaching">Teaching</NavLink></li>
-                    <li className="footerWords"><NavLink to="/outreach">Outreach</NavLink></li>
-                    <li className="footerWords"><NavLink to="/inNews">In the News</NavLink></li>
-                    <li className="footerWords"><NavLink to="/getInvolved">Get Involved</NavLink></li>
-                    <li className="footerWords"><NavLink to="/supporters">Lab Supporters</NavLink></li>
+                    <li className="footerWords"><NavLink className="links" to="/">Home</NavLink></li>
+                    <li className="footerWords"><NavLink className="links" to="/members">Members</NavLink></li>
+                    <li className="footerWords"><NavLink className="links" to="/research">Research</NavLink></li>
+                    <li className="footerWords"><NavLink className="links" to="/publications">Publications</NavLink></li>
+                    <li className="footerWords"><NavLink className="links" to="/teaching">Teaching</NavLink></li>
+                    <li className="footerWords"><NavLink className="links" to="/outreach">Outreach</NavLink></li>
+                    <li className="footerWords"><NavLink className="links" to="/inNews">In the News</NavLink></li>
+                    <li className="footerWords"><NavLink className="links" to="/getInvolved">Get Involved</NavLink></li>
+                    <li className="footerWords"><NavLink className="links" to="/supporters">Lab Supporters</NavLink></li>
                 </ul>
             </div>
             <div className="right">
