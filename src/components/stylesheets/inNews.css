@@ -4,10 +4,63 @@ under{
 italic{
   font-style: italic
 }
+bold{
+  font-weight: 500;
+}
+.quote{
+    font-size: 14px;
+    margin-left:26em;
+}
 .Header{
     font-size: 3em;
     font-weight: 300;
     color: #74121d;
     text-align: center;
-    padding-bottom: .2em;
+    padding-bottom: .5em;
+    padding-bottom: .5em;
+}
+.newsContainer{
+    margin: 5em;
+    margin-top: 1em;
+    width: 88%;
+    border-collapse:collapse;
+}
+.newspics{
+    width: 25%;
+    float: left;
+    margin-right:2em;
+    margin-top:-0.2em;
+    margin-bottom:1.6em;
+    border: 0.5px solid #707070;
+}
+.lines td{
+    border-bottom:0.07em solid black;
+}
+.newsTitle{
+    font-size: 22px; 
+    margin-bottom: 0.1em;
+    margin-top: 0.4em;
+    color: #74121d;
+}
+.newsTitle : visited{
+    color: #74121d;
+}
+.paperLink{
+    color: #74121d;
+    text-decoration: none;
+}
+.paperLink:visited{
+    color: #74121d;
+    text-decoration: none;
+}
+hr{
+    clear:left;
+}
+.date{
+    font-size: 18px;
+    color: #707070;
+    margin-bottom:0em;
+}
+.smaller{
+    font-size:14px;
 }
