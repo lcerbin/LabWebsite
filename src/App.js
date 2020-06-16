@@ -11,6 +11,7 @@ import Navigation from './components/Navigation.js'
 import Publications from './components/Publications.js'
 import InTheNews from './components/InTheNews.js'
 import Supporters from './components/Supporters.js'
+import Footer from './components/Footer'
 
 
 
@@ -18,23 +19,27 @@ import Supporters from './components/Supporters.js'
 class App extends React.Component{
   render(){
     return (
-      <BrowserRouter>
-        <div>
-          <Navigation />
-          <Switch>
-            <Route path="/" component={Home} exact/>
-            <Route path="/getinvolved" component={GetInvolved} />
-            <Route path="/links" component={Links} />
-            <Route path="/members" component={Members} />
-            <Route path="/research" component={Research} />
-            <Route path="/teaching" component={Teaching} />
-            <Route path="/outreach" component={Outreach} />
-            <Route path="/publications" component={Publications} />
-            <Route path="/inNews" component={InTheNews} />
-            <Route path="/supporters" component={Supporters} />
-          </Switch>
-        </div>
-      </BrowserRouter>
+      <div>
+        <BrowserRouter>
+          <div>
+            <Navigation />
+            <Switch>
+              <Route path="/" component={Home} exact/>
+              <Route path="/getinvolved" component={GetInvolved} />
+              <Route path="/links" component={Links} />
+              <Route path="/members" component={Members} />
+              <Route path="/research" component={Research} />
+              <Route path="/teaching" component={Teaching} />
+              <Route path="/outreach" component={Outreach} />
+              <Route path="/publications" component={Publications} />
+              <Route path="/inNews" component={InTheNews} />
+              <Route path="/supporters" component={Supporters} />
+            </Switch>
+          </div>
+          <Footer/>
+        </BrowserRouter>
+      </div>
+      
       )
     }
   }

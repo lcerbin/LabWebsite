@@ -7,6 +7,8 @@ import Pub from './PublicationsCards'
 import Planarian from './Planarian.js'
 import Hydra from './Hydra.js'
 import logo from '../img/Logo.JPG'
+import {useMediaQuery} from 'react-responsive'
+
 
 export default class Home extends React.Component {
    constructor(props){
@@ -27,22 +29,27 @@ export default class Home extends React.Component {
             {names: "Z. Sabry, A. Ho, D. Ireland, C. Rabeler, O. Cochet-Escartin, and E.-M. S. Collins (2019)", picture: {image}, link: "jdoe@swarthmore.edu", linkText: "PDF", articleTitle: "Pharmacological or genetic targeting of Transient Receptor Potential (TRP) channels can disrupt the planarian escape response", journal:"Plos ONE"},
             {names: "D. Ireland, V. Bochenek, D. Chaiken, C. Rabeler, S. Onoe, A. Soni, and E.-M. S. Collins (2020)", picture: {image}, link:"jdoe@swarthmore.edu", linkText: "PDF", articleTitle: "Dugesia japonica is the best suited of three planarian species for high-throughput toxicology screening", journal:"Chemosphere"},
             {names: "Z. Sabry, A. Ho, D. Ireland, C. Rabeler, O. Cochet-Escartin, and E.-M. S. Collins (2019)", picture: {image}, link: "jdoe@swarthmore.edu", linkText: "PDF", articleTitle: "Pharmacological or genetic targeting of Transient Receptor Potential (TRP) channels can disrupt the planarian escape response", journal:"Plos ONE"},
-         ]
+         ],
       }
    }
+
+   
   render(){
+      const isDesktopOrLaptop = true;
       const chosenArticles = randomSelection(this.state.highlightedArticles);
       return (
          <div>
             <div>
                  <ImgCarousel/>
             </div>
-            <div className= "bodyContainer">
-               <div className = "body">
-                  <AboutUs/>
+            <div className={isDesktopOrLaptop ? "" : "center"}>
+               <div classname = {isDesktopOrLaptop ? "bodyContainer" : "bodyContainer-small"}>
+                  <div className = {isDesktopOrLaptop ? "body" : "body-small"}>
+                     <AboutUs/>
+                  </div>
+                  <img className = {isDesktopOrLaptop ? "img" : ""} src={logo}/>
                </div>
-               <img className = "img" src={logo}/>
-           </div>
+            </div>
             <div className= "title">
                <h3 className="header">Highlighted Articles</h3>
             </div>

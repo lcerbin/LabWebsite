@@ -17,7 +17,6 @@ import NIH from '../img/Logos/NIH_logo.jpg'
 import NSF from '../img/Logos/nsf_logo.jpg'
 import RCHCORP from '../img/Logos/research_corporation.jpg'
 
-
 import Society from './Societies'
 
 export default function Supporters (){
