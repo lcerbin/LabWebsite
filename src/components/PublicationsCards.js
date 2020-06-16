@@ -33,7 +33,7 @@ export default class PublicationCard extends React.Component{
                     <tr className = "article tableRow">{articleTitle}</tr>
                     <p></p>
                     <tr className = "news tableRow">{news}</tr>
-                    <tr className = "tableRow"><button onClick="window.location.href= {link}" className="PDF" href={link}>Link</button></tr>
+                    <tr className = "tableRow"><a href={link}><button onClick="window.location.href= {link}" className="PDF" href={link}>Link</button></a></tr>
                     <tr><form action={link} target="_blank"><button className="PDF">Link</button></form></tr>
                 </table>
             </div>
