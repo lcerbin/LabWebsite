@@ -14,7 +14,7 @@ const GetInvolved = () => {
               email Eva-Maria to arrange for a short meeting to discuss available projects.<br/><br/>
               We also have an opening for a postdoctoral researcher. The position requires
                a PhD in toxicology, pharmacology, computational biology, neurobiology, biomedical engineering, molecular biology, or closely related field
-              (see <a href="https://www.linkedin.com/jobs/view/post-doctoral-fellow-neurotoxicology-at-swarthmore-college-1849379664/">job posting
+              (see <a href="https://www.linkedin.com/jobs/view/post-doctoral-fellow-neurotoxicology-at-swarthmore-college-1849379664/" target="_blank">job posting
               </a> for more information).</p>
               <img className="martin" src={Martin} alt="Martin Hall" />
           </table>
