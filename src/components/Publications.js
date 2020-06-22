@@ -1,40 +1,99 @@
 import React from 'react';
 import PublicationCard from './PublicationsCards'
-import image1 from '../img/slideshowimgs/img3.jpg'
 import './stylesheets/publications.css'
 import {useMediaQuery} from 'react-responsive'
-import MemberCard from './MemberCards';
+import './stylesheets/publications.css'
+import Beads from '../img/Highlighted/beads.jpg'
+import Compare from '../img/Highlighted/comparePlan.jpg'
+import Graft from '../img/Highlighted/graft.jpg'
+import Linalool from '../img/Highlighted/linalool.jpg'
+import Mechanics from '../img/Highlighted/mechanicsDictate.jpg'
+import Mouth from '../img/Highlighted/mouth.jpg'
+import Size from '../img/Highlighted/planSize.JPG'
+import Scrunch from '../img/Highlighted/scrunch.jpg'
+import Tissue from '../img/Highlighted/tissue.jpg'
+import Zebra from '../img/Highlighted/zebrafish.jpg'
+
 
 const Publications = () => {
   const isComputer = useMediaQuery({minDeviceWidth:1224})
   const highlightedArticles = [
     {
-    names: "D. Hagstrom, L. Truong, S. Zhang, R. L. Tanguay, and E.-M. S. Collins (2019)",
-    picture: {image1},
-    link: "https://academic.oup.com/toxsci/pages/paper_of_the_year_award",
-    articleTitle:"Comparative analysis of zebraﬁsh and planarian model systems for developmental neurotoxicity screens using an 87-compound library",
-    journal: "Toxicological Sciences",
-    news:'This paper was awarded the “Tox. Sci. Paper of the year 2019” by the Society of Toxicology.'},
+      names: "D. Hagstrom, L. Truong, S. Zhang, R. L. Tanguay, and E.-M. S. Collins (2019)",
+      picture: {Zebra},
+      link: "https://academic.oup.com/toxsci/pages/paper_of_the_year_award",
+      articleTitle: "Comparative analysis of zebraﬁsh and planarian model systems for developmental neurotoxicity screens using an 87-compound library",
+      journal: "Toxicological Sciences",
+      news: 'This paper was awarded the “Tox. Sci. Paper of the year 2019” by the Society of Toxicology.'
+    },
     {
-    names:"P.T. Malinowski*, O. Cochet-Escartin*, K.J. Kaj, E. Ronan, A. Groisman, P.H. Diamond, E.-M. S. Collins (2017)",
-    picture:{image1},
-    link:"https://pubmed.ncbi.nlm.nih.gov/28973880/",
-    articleTitle:"Mechanics dictate where and how freshwater planarians ﬁssion",
-    journal:"Proc Natl Acad Sci",
-    news:"(* ﬁrst author). Featured in Nature Physics."},
+      names: "P.T. Malinowski*, O. Cochet-Escartin*, K.J. Kaj, E. Ronan, A. Groisman, P.H. Diamond, E.-M. S. Collins (2017)",
+      picture: {Mechanics},
+      link: "https://pubmed.ncbi.nlm.nih.gov/28973880/",
+      articleTitle: "Mechanics dictate where and how freshwater planarians ﬁssion",
+      journal: "Proc Natl Acad Sci",
+      news: "(* ﬁrst author). Featured in Nature Physics.",
+    },
     {
-    names:"J.A. Carter*, C. Hyland*, R.E. Steele, E.-M. S. Collins (2016)",
-    picture: {image1},
-    link:"https://pubmed.ncbi.nlm.nih.gov/26958895/",
-    articleTitle:"The dynamics of mouth opening in Hydra",
-    journal:"Biophysical Journal",
-    news:" (* ﬁrst author). Featured as “New and Notable” and BPS “Paper of the year 2016”"},
+      names: "J.A. Carter*, C. Hyland*, R.E. Steele, E.-M. S. Collins (2016)",
+      picture: {Mouth},
+      link: "https://pubmed.ncbi.nlm.nih.gov/26958895/",
+      articleTitle: "The dynamics of mouth opening in Hydra",
+      journal: "Biophysical Journal",
+      news: " (* ﬁrst author). Featured as “New and Notable” and BPS “Paper of the year 2016”"
+    },
     {
-    names:"NEW: D. Ireland, V. Bochenek, D. Chaiken, C. Rabeler, S. Onoe, A. Soni, and E.-M. S. Collins (2020)",
-    picture:{image1},
-    link:"https://pubmed.ncbi.nlm.nih.gov/32298908/",
-    articleTitle:"Dugesia japonica is the best suited of three planarian species for high-throughput toxicology screening",
-    journal: "Chemosphere"}
+      names: "NEW: D. Ireland, V. Bochenek, D. Chaiken, C. Rabeler, S. Onoe, A. Soni, and E.-M. S. Collins (2020)",
+      picture: {Compare},
+      link: "https://pubmed.ncbi.nlm.nih.gov/32298908/",
+      articleTitle: "Dugesia japonica is the best suited of three planarian species for high-throughput toxicology screening",
+      journal: "Chemosphere"
+    },
+    {
+      names: "Z. Sabry, A. Ho, D. Ireland, C. Rabeler, O. Cochet-Escartin, and E.-M. S. Collins (2019)",
+      picture: {Scrunch},
+      link: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6894859/",
+      articleTitle: "Pharmacological or genetic targeting of Transient Receptor Potential (TRP) channels can disrupt the planarian escape response.",
+      journal: "Plos ONE"
+    },
+    {
+      names: "R. Wang, T. Goel, K. Khazoyan, Z. Sabry, H.J. Quan, P.H. Diamond and E.-M. S. Collins (2019)",
+      picture: {Beads},
+      link: "https://europepmc.org/article/med/31443907",
+      articleTitle: "Mouth Function Determines The Shape Oscillation Pattern In Regenerating Hydra Tissue Spheres.",
+      journal: "Biophysical Journal"
+    },
+    {
+      names: "O. Cochet-Escartin, T. Locke, W. Shi, R.E. Steele, E.-M. S. Collins (2017)",
+      picture: {Tissue},
+      link: "pubmed.ncbi.nlm.nih.gov/29262375/",
+      articleTitle: "Physical mechanisms driving cell sorting in Hydra.",
+      journal: "Biophysical Journal",
+      news: "Featured as “New and Notable"
+    },
+    {
+      names: "X. Yang*, K.J. Kaj*, D.J. Schwab, and E.-M. S. Collins (2017)",
+      picture: {Size},
+      link: "https://pubmed.ncbi.nlm.nih.gov/28467318/",
+      articleTitle: "Coordination of size-control, reproduction and memory in freshwater planarians.",
+      journal: "Physical Biology",
+      news: "(* ﬁrst author)"
+    },
+    {
+      names: "NEW: R. Wang and E.-M. S. Collins (2020)",
+      picture: {Graft},
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0012160620300889?via%3Dihub",
+      articleTitle: "A novel bilateral grafting technique for studying patterning in Hydra.",
+      journal: "Developmental Biology"
+    },
+    {
+      names: "T. Goel, R. Wang, S. Martin, E. Lanphear, and E.-M. S. Collins (2019)",
+      picture: {Linalool},
+      link: "https://europepmc.org/article/med/31648269",
+      articleTitle: "Linalool acts as a fast and reversible anesthetic in Hydra.",
+      journal: "Plos ONE"
+    }
+
   ]
 
   function printHighlightedArticles(papers){

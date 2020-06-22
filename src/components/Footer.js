@@ -2,10 +2,10 @@ import React from 'react'
 import labLogo from '../img/Logo.JPG'
 import './stylesheets/footer.css'
 import { NavLink, Link } from 'react-router-dom'
-import nsf from '../img/Logos/nsf_logo.jpg'
-import SwatLogo from '../img/swatLogo.png'
-import nih from '../img/Logos/NIH_logo.jpg'
-import researchCorp from '../img/Logos/research_corporation.jpg'
+import nsf from '../img/Footer/nsf_logo.jpg'
+import swat_logo from '../img/Footer/swat_logo.jpg'
+import nih from '../img/Footer/NIH_logo.jpg'
+import researchCorp from '../img/Footer/research_corporation.jpg'
 
 
 const Footer = () => {
@@ -13,11 +13,11 @@ const Footer = () => {
         <div className="footer">
             <div className="left-side">
                 <img className = "miniLogo" src={labLogo}/>
-                <h5 className="footerTitle">Collin's Laboratory</h5>
+                <h5 className="footerTitleCont">Collin's Laboratory</h5>
                 <div className="grouping">
-                    <h6 className="footerWords">Eva-Maria Collin</h6>
-                    <h6 className="footerWords">[Swat Phone Number]</h6>
-                    <h6 className="footerWords">ecollins3@swarthmore.edu</h6>
+                    <h6 className="footerWordsCont">Eva-Maria Collins</h6>
+                    <h6 className="footerWordsCont">[Swat Phone Number]</h6>
+                    <h6 className="footerWordsCont">ecollins3@swarthmore.edu</h6>
                 </div>
             </div>
             <div className="middle">
@@ -40,16 +40,16 @@ const Footer = () => {
                         <img className='footerLogo' src={nsf}/>
                     </a>
                     <a href="https://www.niehs.nih.gov/">
-                        <img className='footerLogo' src={nih}/>
+                        <img className='footerLogo' src={researchCorp}/>
                     </a>
-                    
+
                 </div>
                 <div className="logos">
                     <a href="https://www.swarthmore.edu/">
-                        <img className='footerLogo' src={SwatLogo}/>
+                        <img className='footerLogo' src={swat_logo}/>
                     </a>
                     <a href="https://rescorp.org/">
-                        <img className='footerLogo' src={researchCorp}/>
+                        <img className='footerLogo' src={nih}/>
                     </a>
                 </div>
             </div>

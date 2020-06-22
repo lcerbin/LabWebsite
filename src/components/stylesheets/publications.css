@@ -62,7 +62,7 @@ italic{
     border-radius: 7px
 }
 img{
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 7px;
     margin-bottom: 10px;

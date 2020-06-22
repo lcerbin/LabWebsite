@@ -22,6 +22,19 @@
 .footerWords{
     font-style: normal;
     font-weight: 300;
+    font-size: 1.3em;
+    color: #74121d;
+    margin-bottom: 0;
+    padding-bottom: 0.15em;
+    margin-top: 0;
+    letter-spacing: 0.05em;
+}
+.footerWords:hover{
+    font-weight: 350;
+}
+.footerWordsCont{
+    font-style: normal;
+    font-weight: 300;
     font-size: 1.1em;
     color: #74121d;
     margin-bottom: 0;
@@ -29,13 +42,22 @@
     margin-top: 0;
 }
 
-.footerTitle{
+.footerTitleCont{
     font-style: normal;
     font-weight: 300;
-    font-size: 1.5em;
+    font-size: 1.6em;
     color: #74121d;
     margin-bottom: 0em;
     margin-top: 1%;
+}
+.footerTitle{
+    font-style: normal;
+    font-weight: 340;
+    font-size: 1.8em;
+    color: #74121d;
+    margin-bottom: 0em;
+    margin-top: 1%;
+    text-indent: -0.2em;
 }
 
 .grouping{
@@ -53,7 +75,8 @@
 
 .middle{
     padding-top:4%;
-    width: 30%
+    width: 30%;
+    padding-bottom:1%;
 }
 
 .right{
