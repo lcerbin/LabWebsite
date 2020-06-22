@@ -1,11 +1,13 @@
 import React from 'react'
 import stockImage from '../img/slideshowimgs/img1.jpg'
 import {Link} from 'react-router-dom'
+import {useMediaQuery} from 'react-responsive'
 
 const OutreachCard = (props) => {
+    const isComputer = useMediaQuery({minWidth: 1224})
         return(
             <div className="center">
-                <div className="outreachCard">
+                <div className={isComputer ? "outreachCard" : "outreachCard-small"}>
                     <img className = "outreachImg" src={stockImage}/>
                     <div className = "col">
                         <h5 className = "subtitle">

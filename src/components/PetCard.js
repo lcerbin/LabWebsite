@@ -1,4 +1,4 @@
-import React, {setState} from 'react'
+import React from 'react'
 import './stylesheets/members.css'
 import image from '../img/slideshowimgs/img1.jpg'
 
@@ -19,15 +19,18 @@ export default class PetCard extends React.Component{
         return(
             <div className = "card">
                 <table>
-                    <tr>
-                        <td>
-                            <img src={image} alt = "Picture of Pet"/>
-                        </td>
-                    </tr>
-                        <tr className = "image tableRow"></tr>
-                        <tr className = "name tableRow">{name}</tr>
-                        <tr className = "header tableRow">My Research</tr>
-                        <tr className = " tableRow">{project}</tr>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src={photo} alt = "Pet"/>
+                            </td>
+                        </tr>
+                            <tr className = "image tableRow"></tr>
+                            <tr className = "name tableRow"><td>{name}</td></tr>
+                            <tr className = "header tableRow"><td>My Research</td></tr>
+                            <tr className = " tableRow"><td>{project}</td></tr>
+                    </tbody>
+                    
                 </table>
             </div>
             

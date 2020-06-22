@@ -1,4 +1,4 @@
-import React, {setState} from 'react'
+import React from 'react'
 export default class PublicationCard extends React.Component{
     constructor(props){
         super(props)
@@ -19,26 +19,24 @@ export default class PublicationCard extends React.Component{
         const photo = this.state.picture;
         const journal = this.state.journal;
         const news = this.state.news;
-        console.log(this.props)
         return(
             <div className = "card">
                 <table>
-                    <tr>
-                        <td>
-                            <img src={photo} alt = "Picture"/>
-                        </td>
-                    </tr>
-                    <tr className = "names tableRow">{names}</tr>
-                    <tr className = "journal tableRow">{journal}</tr>
-                    <tr className = "article tableRow">{articleTitle}</tr>
-                    <p></p>
-                    <tr className = "news tableRow">{news}</tr>
-                    <tr className = "tableRow"><a href={link}><button onClick="window.location.href= {link}" className="PDF" href={link}>Link</button></a></tr>
-                    <tr><form action={link} target="_blank"><button className="PDF">Link</button></form></tr>
+                    <tbody> 
+                        <tr>
+                            <td>
+                                <img src={photo} alt = "Picture"/>
+                            </td>
+                        </tr>
+                        <tr className = "names tableRow"><td>{names}</td></tr>
+                        <tr className = "journal tableRow"><td>{journal}</td></tr>
+                        <tr className = "article tableRow"><td>{articleTitle}</td></tr>
+                        <tr className = "news tableRow"><td>{news}</td></tr>
+                        <tr className = "tableRow"><td><a href={link}><button className="PDF" href={link}>Link</button></a></td></tr>
+                    </tbody>
                 </table>
             </div>
 
         )
-        return("hi")
     }
 }

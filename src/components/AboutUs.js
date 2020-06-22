@@ -24,15 +24,17 @@ const projectThree = "This incredible process is reminiscent of any organism’s
 const AboutUs = () => {
     return(
         <div>
-            <MediaQuery minDeviceWidth={1224}>
+            <MediaQuery minDeviceWidth={992}>
                 <table className = "containers">
-                    <tr>
-                        <td className = "introHeading">About Us</td>
-                        <td className = "introSentences">{intro}</td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td className = "introHeading">About Us</td>
+                            <td className = "introSentences">{intro}</td>
+                        </tr>
+                    </tbody>     
                 </table>
             </MediaQuery>
-            <MediaQuery maxDeviceWidth={1223}>
+            <MediaQuery maxDeviceWidth={991}>
                 <div className="">
                     <h5 className="title">
                         About Us

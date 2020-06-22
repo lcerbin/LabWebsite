@@ -11,6 +11,11 @@ bold{
     font-size: 14px;
     margin-left:26em;
 }
+
+.quote.small{
+    font-size: 14px;
+    width: 60%;
+}
 .Header{
     font-size: 3em;
     font-weight: 300;
@@ -25,6 +30,14 @@ bold{
     width: 88%;
     border-collapse:collapse;
 }
+
+.newsContainer-small{
+    margin-top: 1em;
+    width: 88%;
+    border-collapse:collapse;
+    margin-left: 6%
+}
+
 .newspics{
     width: 25%;
     float: left;

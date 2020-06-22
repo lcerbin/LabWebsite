@@ -1,4 +1,4 @@
-import React, {setState} from 'react'
+import React from 'react'
 import './stylesheets/members.css'
 import image from '../img/slideshowimgs/img1.jpg'
 
@@ -15,7 +15,6 @@ export default class MemberCard extends React.Component{
             fun: props.fun,
             CV: props.CV,
             phd: props.phd,
-            animal: props.animal,
             picture: {image},
             undergrad: props.undergrad,
         }
@@ -26,23 +25,25 @@ export default class MemberCard extends React.Component{
         const email = this.state.email;
         const project = this.state.projects;
         const fun = this.state.fun;
-        const animal = this.state.animal;
         const photo = this.state.picture;
         return(
             <div className = "card">
                 <table>
-                    <tr>
-                        <td>
-                            <img src={image} alt = "Picture of Luca"/>
-                        </td>
-                    </tr>
-                        <tr className = "image tableRow"></tr>
-                        <tr className = "name tableRow">{name}{PhD ? ', PhD' : ''}</tr>
-                        <tr className = "tableRow"><button className = "email" href={email}>Email</button></tr>
-                        <tr className = "header tableRow">My Research</tr>
-                        <tr className = " tableRow">{project}</tr>
-                        <tr className = "header tableRow">Non-Science Fun</tr>
-                        <tr className = " tableRow">{fun}</tr>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src={photo} alt = "Picture of Luca"/>
+                            </td>
+                        </tr>
+                            <tr className = "image tableRow"></tr>
+                            <tr className = "name tableRow"><td>{name}{PhD ? ', PhD' : ''}</td></tr>
+                            <tr className = "tableRow"><td><button className = "email" href={email}>Email</button></td></tr>
+                            <tr className = "header tableRow"><td>My Research</td></tr>
+                            <tr className = " tableRow"><td>{project}</td></tr>
+                            <tr className = "header tableRow"><td>Non-Science Fun</td></tr>
+                            <tr className = " tableRow"><td>{fun}</td></tr>
+                    </tbody>
+                    
                 </table>
             </div>
             

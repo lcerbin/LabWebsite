@@ -2,6 +2,13 @@
    text-align: left;
    width: 100%;
 }
+
+.classPreq-small{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .prereq{
    text-align: left;
    vertical-align: top;
@@ -10,6 +17,17 @@
    padding-right: 20px;
    width: 400px;
 }
+
+.prereq-small{
+  text-align: left;
+   vertical-align: top;
+   line-height: 25px;
+   padding-left: 60px;
+   padding-right: 20px;
+   width: 400px;
+   padding-bottom: 5%;
+}
+
 .nameClass{
   font-size: 20px;
   color: #74121d; 
@@ -33,4 +51,9 @@ italic{
     padding-left: 60px;
     padding-bottom: 60px;
     padding-top: 13px;
+}
+
+.class_text-small{
+  padding-left: 60px;
+  padding-top: 13px;
 }

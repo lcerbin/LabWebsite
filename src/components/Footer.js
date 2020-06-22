@@ -15,7 +15,7 @@ const Footer = () => {
                 <img className = "miniLogo" src={labLogo}/>
                 <h5 className="footerTitle">Collin's Laboratory</h5>
                 <div className="grouping">
-                    <h6 className="footerWords">Eva-Maria Collins</h6>
+                    <h6 className="footerWords">Eva-Maria Collin</h6>
                     <h6 className="footerWords">[Swat Phone Number]</h6>
                     <h6 className="footerWords">ecollins3@swarthmore.edu</h6>
                 </div>

@@ -6,19 +6,20 @@ const text = "We look at Hydra, as not only can they regenerate from small tissu
 
 const Behavior = (props) => {
     const image = props.image
+    const isComputer = props.isComputer;
     return(
         <Element id = "behavior" name = "behavior">
             <div className = "banner" style = {{
                     backgroundImage: `url(${image})`,
                     height: "100%", }}>
             </div>
-            <div className="researchSection">
-                <h2 className = "project" >Behavior and Neurotoxicology</h2>
-                <h3 className = "projectDesc">{text}</h3>
+            <div className={isComputer ? "researchSection" : "researchSection-small"}>
+                <h2 className = {isComputer ? "project" : "project-small"} >Behavior and Neurotoxicology</h2>
+                <h3 className = {isComputer ? "projectDesc" : "projectDesc-small"}>{text}</h3>
             </div>
             <div className = "imageRow">
-                    <img src={image} className="researchImage"/>
-                    <img src={image} className="researchImage"/>
+                    <img src={image} alt = "Information" className="researchImage"/>
+                    <img src={image} alt = "Information" className="researchImage"/>
             </div>
         </Element>
     )

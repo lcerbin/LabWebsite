@@ -1,13 +1,14 @@
 import React from 'react';
 import ImgCarousel from './Carousel.js'
 import './stylesheets/home.css'
-import AboutUs from './HomeBody.js'
-import image from '../img/slideshowimgs/img3.jpg'
+import AboutUs from './AboutUs.js'
+import image from '../img/slideshowimgs/img1.jpg'
 import Pub from './PublicationsCards' 
 import Planarian from './Planarian.js'
 import Hydra from './Hydra.js'
 import logo from '../img/Logo.JPG'
-import {useMediaQuery} from 'react-responsive'
+import MediaQuery, { useMediaQuery } from 'react-responsive'
+import HomeContent from './HomeContent.js'
 
 
 export default class Home extends React.Component {
@@ -35,25 +36,16 @@ export default class Home extends React.Component {
 
    
   render(){
-      const isDesktopOrLaptop = true;
       const chosenArticles = randomSelection(this.state.highlightedArticles);
       return (
          <div>
             <div>
                  <ImgCarousel/>
             </div>
-            <div className={isDesktopOrLaptop ? "" : "center"}>
-               <div classname = {isDesktopOrLaptop ? "bodyContainer" : "bodyContainer-small"}>
-                  <div className = {isDesktopOrLaptop ? "body" : "body-small"}>
-                     <AboutUs/>
-                  </div>
-                  <img className = {isDesktopOrLaptop ? "img" : ""} src={logo}/>
-               </div>
-            </div>
+            <HomeContent/>
             <div className= "title">
-               <h3 className="header">Highlighted Articles</h3>
+                  <h3 className="header">Highlighted Articles</h3>
             </div>
-           
            {chosenArticles.map((row, index) => (
               <div key = {index} className="row">
                  {row.map((article, secIndex) => (
@@ -76,7 +68,11 @@ export default class Home extends React.Component {
 
 
 function randomSelection (highlightedArticles) {
-   const rowSize = 3;
+   var rowSize = 3;
+   var screenWidth = window.screen.width;
+   if(screenWidth < 1224){
+      rowSize = 1;
+   }
    const articleNum = 6;
    var indices = [];
    var chosenArticles = []
@@ -95,8 +91,7 @@ function randomSelection (highlightedArticles) {
    }
    var numChunks = articleNum/rowSize;
    for(var i =0; i < numChunks; i++){
-      twoDArticles.push(chosenArticles.slice((0 + i*rowSize), 3 + i*rowSize))
+      twoDArticles.push(chosenArticles.slice((0 + i*rowSize),  rowSize + i*rowSize))
    }
-   console.log(twoDArticles[0][1])
    return twoDArticles;
 }

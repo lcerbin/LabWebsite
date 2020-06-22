@@ -1,4 +1,5 @@
 import React from 'react';
+import MediaQuery from 'react-responsive'
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import Home from './components/Home.js'
 import GetInvolved from './components/GetInvolved.js'
@@ -12,6 +13,7 @@ import Publications from './components/Publications.js'
 import InTheNews from './components/InTheNews.js'
 import Supporters from './components/Supporters.js'
 import Footer from './components/Footer'
+import { Media } from 'react-bootstrap';
 
 
 

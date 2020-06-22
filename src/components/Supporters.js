@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link, Element} from 'react-scroll';
+import {useMediaQuery} from 'react-responsive'
 import './stylesheets/supporters.css'
 import image from '../img/slideshowimgs/img1.jpg'
 import APSLogo from '../img/Logos/apslogo.gif'
@@ -21,11 +22,14 @@ import Society from './Societies'
 
 export default function Supporters (){
     //Should probably change the societies to use a map function, but that's for later :)
+    const isComputer = useMediaQuery({minWidth: 1224})
     const text = "We look at Hydra, as not only can they regenerate from small tissue pieces, but they can also regenerate from cell aggregates after disintegration into individual cells."
     return(
         <div>
             <div>
                 <h1 className="title">Lab Supporters</h1>
+
+                {isComputer &&
                 <div className="group">
                     <h2 className="subtitle">
                         <Link to="societies"
@@ -46,7 +50,7 @@ export default function Supporters (){
                             Grants
                         </Link>
                     </h2>
-                </div>
+                </div>}
                 <div className="topimg">
                     <img className = "center" src={image}/>
                 </div>
@@ -56,7 +60,6 @@ export default function Supporters (){
                     <h2 className="title">Societies</h2>
                 </div>
             </Element>
-            
                 <Society logo={APSLogo} society="APS" link="https://www.aps.org/units/dbp/" description={text}/>
                 <Society logo={ASCCTLogo} society="ASCCT" link="https://www.ascctox.org/" description={text}/>
                 <Society logo={BiophysLogo} society="Biophysical Society" link="https://www.biophysics.org/" description={text}/>

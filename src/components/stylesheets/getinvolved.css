@@ -32,6 +32,13 @@ italic{
     float: right;
     margin-top:2.5em;
 }
+
+.martin-small{
+    width: 90%;
+    margin-top:2.5em;
+    display: flex;
+    justify-content: center;
+}
 .contact{
     text-align: center;
     line-height: 1.5em;
