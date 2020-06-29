@@ -100,11 +100,11 @@ function Members(){
             <h1 className="edHead">Lab Pets</h1>
             {printRows(labPets)}
             <h1 className = "edHead">Lab Alumni</h1>
-            <div>
-                <Alumni minorNumber = {0} majorNumber={1} majors = "Biology" gradYear = {2020} email = "jdoe1@swarthmore.edu" linkedIn = "linkedIn.com/Luca-Cerbin"/>
-                <Alumni minorNumber = {0} majorNumber={2} majors = {doubleMajor} gradYear = {2020} email = "jdoe1@swarthmore.edu" linkedIn = "linkedIn.com/Luca-Cerbin"/>
-                <Alumni minorNumber = {1} majorNumber={1} majors = "Biology" minors = "Biology" gradYear = {2020} email = "jdoe1@swarthmore.edu" linkedIn = "linkedIn.com/Luca-Cerbin"/>
-                <Alumni minorNumber = {2} majorNumber={1} majors = "Biology" minors = {doubleMinor} gradYear = {2020} email = "jdoe1@swarthmore.edu" linkedIn = "linkedIn.com/Luca-Cerbin"/>
+            <div className="alumTable">
+                <Alumni  WTDN = "Software Engineer at Tesla" gradYear = {2020} uni="Swarthmore College" linkedIn = "linkedIn.com/Luca-Cerbin"/>
+                <Alumni  WTDN = "Software Engineer at Tesla" gradYear = {2020} uni="Swarthmore College" linkedIn = "linkedIn.com/Luca-Cerbin"/>
+                <Alumni  WTDN = "Software Engineer at Tesla" gradYear = {2020} uni="Swarthmore College" linkedIn = "linkedIn.com/Luca-Cerbin"/>
+                <Alumni  WTDN = "Software Engineer at Tesla" gradYear = {2020} uni="Swarthmore College" linkedIn = "linkedIn.com/Luca-Cerbin"/>
             </div>  
        </div>
     );

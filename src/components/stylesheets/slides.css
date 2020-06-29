@@ -35,3 +35,11 @@
 .overlap{
     text-decoration: none;
 }
+
+.text-block-small{
+    padding-top: 0;
+    padding-bottom: 5%;
+    text-align: center;
+    color: #74121d;
+
+}

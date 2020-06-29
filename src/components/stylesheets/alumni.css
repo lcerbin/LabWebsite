@@ -2,16 +2,27 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    max-height: 5%;
 
 }
 
 .alumCol{
-    width: 12%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
 }
 
 .alumFont{
     font-style: normal;
     font-weight: 300;
     color: #74121d;
-    font-size: 1.2em;
+    font-size: .8em;
+    margin: 0;
+    margin-bottom: 1%;
+}
+
+.alumTable{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
 }

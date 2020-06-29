@@ -7,10 +7,38 @@
     align-items: flex-start;
 }
 
+.navBar-small{
+    display: flex;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    background-color: #d8ddde;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .navItem{
     padding-left: 20px;
     text-decoration: none;
     color: #74121d;
+    font-size: 1em;
+}
+
+.navItem-small{
+    padding-left: 20px;
+    text-decoration: none;
+    color: #74121d;
+    font-size: .7em;
+}
+
+.subtitle-small{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3em;
+    color: #74121d;
+    margin: 0;
+    padding-left:22%;
+    width: 68%;
 }
 
 #logo{
@@ -19,3 +47,82 @@
     height: auto;
     padding-left: 1em;
 }
+
+#logo-small{
+    display: block;
+    max-width: 20%;
+    height: auto;
+    padding-right: 3%;
+}
+
+.bm-burger-button {
+    position: absolute;
+    width: 9%;
+    height: 4%;
+    left: 3%;
+    top: 4%;
+  }
+  
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #74121d;
+    height: 15% !important;
+  }
+  
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+    background: #74121d;
+  }
+  
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+  
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+  
+  /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+  .bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+    background: #74121d !important;
+    width: 70% !important;
+
+  }
+  
+  .bm-menu{
+      padding-top: 20%;
+      color: #f2f4f7;
+      padding-left: 15%;
+  }
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+  
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+  }
+  
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+    font-style: normal;
+    text-decoration: none;
+    color: #f2f4f7;
+    font-weight: 700;
+    padding-bottom: 3%;
+  }
+  
+  /* Styling of overlay */
+  .bm-overlay {
+  }
