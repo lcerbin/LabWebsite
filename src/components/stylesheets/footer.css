@@ -44,6 +44,14 @@
     padding-bottom:1%;
 }
 
+.base-tablet{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
 .base{
     width:100%;
     display: flex;

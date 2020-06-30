@@ -11,6 +11,7 @@ import {useMediaQuery} from 'react-responsive';
 
 const Footer = () => {
     var isComputer = useMediaQuery({minWidth: 1024})
+    var isTablet = useMediaQuery({minWidth: 724, maxWidth: 1024})
     return(
         <div className={isComputer ? "footer" : "grey"}>
             <div className={isComputer ? "row" : "footer-small"}>
@@ -38,7 +39,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <div className={isComputer ? "right" : "base"}>
+            <div className={isComputer ? "right" : isTablet ? "base-tablet" : "base"}>
                 <div className="logos">
                     <a href="https://www.nsf.gov/">
                         <img className='footerLogo' src={nsf}/>

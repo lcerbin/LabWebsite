@@ -6,8 +6,8 @@ import {useMediaQuery} from 'react-responsive';
 import {slide as Menu} from 'react-burger-menu'
 
 const Navigation = () => {
-    var isComputer = useMediaQuery({minWidth: 1224})
-    var  isTablet = useMediaQuery({minWidth: 724, maxWidth: 1224})
+    var isComputer = useMediaQuery({minWidth: 1000})
+    var isTablet = useMediaQuery({minWidth: 724, maxWidth: 1000})
     return (
         <div>
             {

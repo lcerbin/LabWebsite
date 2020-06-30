@@ -2,9 +2,9 @@ import React from 'react'
 import Carousel from 'react-bootstrap'
 import image1 from '../img/slideshowimgs/img1.jpg'
 import image3 from '../img/slideshowimgs/img3.jpg'
-import image4 from '../img/slideshowimgs/img4.jpg'
+import image4 from '../img/slideshowimgs/science_education.png'
 import biomechanics from '../img/slideshowimgs/Biomechanics.png'
-import neurotox from '../img/slideshowimgs/neurotox.png'
+import neurotox from '../img/slideshowimgs/screening.png'
 import populationDynamics from '../img/slideshowimgs/population_dynamics.png'
 import logo from '../img/Logo.JPG'
 import './stylesheets/slides.css'
@@ -16,11 +16,12 @@ import {useMediaQuery} from 'react-responsive'
 
 export default function ImgCarousel(){
         var isComputer = useMediaQuery({minWidth: 1224})
+        var isTablet = useMediaQuery({minWidth: 724})
         return(
             <div className="slideImages">
                 <CarouselProvider
                     naturalSlideWidth={100}
-                    naturalSlideHeight={125}
+                    naturalSlideHeight={isTablet ? 90 : 125}
                     totalSlides={4}
                     isPlaying={true}
                     infinite={true}
