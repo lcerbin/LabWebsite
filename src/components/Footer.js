@@ -20,7 +20,7 @@ const Footer = () => {
                     <h5 className={isComputer ? "footerTitleCont" : "footerTitle-small"}>Collin's Laboratory</h5>
                     <div className="grouping">
                         <h6 className={isComputer ? "footerWordsCont" : "footerWordsCont-small"}>Eva-Maria Collins</h6>
-                        <h6 className={isComputer ? "footerWordsCont" : "footerWordsCont-small"}>[Swat Phone Number]</h6>
+                        <h6 className={isComputer ? "footerWordsCont" : "footerWordsCont-small"}><a className = 'links' href='(610)328-8000'>(610)328-8000</a></h6>
                         <h6 className={isComputer ? "footerWordsCont" : "footerWordsCont-small"}>ecollins3@swarthmore.edu</h6>
                     </div>
                 </div>

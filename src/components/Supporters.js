@@ -23,6 +23,7 @@ import Society from './Societies'
 export default function Supporters (){
     //Should probably change the societies to use a map function, but that's for later :)
     const isComputer = useMediaQuery({minWidth: 1224})
+    const isPhone = useMediaQuery({maxWidth: 724})
     const text = "We look at Hydra, as not only can they regenerate from small tissue pieces, but they can also regenerate from cell aggregates after disintegration into individual cells."
     return(
         <div>
@@ -60,10 +61,10 @@ export default function Supporters (){
                     <h2 className="title">Societies</h2>
                 </div>
             </Element>
-                <Society logo={APSLogo} society="APS" link="https://www.aps.org/units/dbp/" description={text}/>
-                <Society logo={ASCCTLogo} society="ASCCT" link="https://www.ascctox.org/" description={text}/>
-                <Society logo={BiophysLogo} society="Biophysical Society" link="https://www.biophysics.org/" description={text}/>
-                <Society logo={SoTLogo} society="Society for Toxicology" link="https://www.toxicology.org/" description={text}/>
+                <Society logo={APSLogo} society="APS" link="https://www.aps.org/units/dbp/" description={text} isPhone={isPhone}/>
+                <Society logo={ASCCTLogo} society="ASCCT" link="https://www.ascctox.org/" description={text} isPhone={isPhone}/>
+                <Society logo={BiophysLogo} society="Biophysical Society" link="https://www.biophysics.org/" description={text} isPhone={isPhone}/>
+                <Society logo={SoTLogo} society="Society for Toxicology" link="https://www.toxicology.org/" description={text} isPhone={isPhone}/>
             <Element name="collabs">
                 <div className='center'>
                     <h2 className="title">Collaborators</h2>

@@ -20,6 +20,12 @@ italic{
     padding-top: 15px;
     padding-left:20px;
 }
+.sentences-small{
+    padding-right: 80px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-left:20px;
+}
 .PDF{
   background-color: #74121d;
   border: solid 1px transparent;

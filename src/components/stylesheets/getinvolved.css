@@ -21,6 +21,13 @@ italic{
     width: 88%;
     border-collapse:collapse;
 }
+.picLayout-small{
+    width: 88%;
+    margin-bottom: 0em;
+    margin-top: 1em;
+    border-collapse:collapse;
+    margin-left: 8%;
+}
 .labpicnic{
     width: 40%;
     text-align: center;

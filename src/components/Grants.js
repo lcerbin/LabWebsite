@@ -11,7 +11,7 @@ const Grants = (props) => {
                 <div className="logo">
                     <img src={logo}/>
                 </div>
-                <div className = "col">
+                <div className = "Scol">
                     <h5 className="subtitle">{orgName}</h5>
                     <h6 className="labs"><a href={orgURL}>{orgURL}</a></h6>
                     <p className="description">{description}</p>

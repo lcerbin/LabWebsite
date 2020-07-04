@@ -74,3 +74,8 @@
     max-width: 12%;
     padding-right: 5%;
 }
+
+.Scol{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import PublicationCard from './PublicationsCards'
 import './stylesheets/publications.css'
-import {useMediaQuery} from 'react-responsive'
+import MediaQuery, {useMediaQuery} from 'react-responsive'
 import './stylesheets/publications.css'
 import Beads from '../img/Highlighted/beads.jpg'
 import Compare from '../img/Highlighted/comparePlan.jpg'
@@ -108,7 +108,7 @@ const Publications = () => {
     }
         return(
             twoDPapers.map((row, index) => (
-            <div key = {index} className="table">
+            <div key = {index} className="row">
                 {row.map((paper, secIndex) => (
                   <PublicationCard 
                   key = {secIndex+10}
@@ -134,14 +134,31 @@ const Publications = () => {
           <h3 className = "Head3">Neurotoxicology and Planarian Behavior</h3>
           <table className = "container">
             <tbody>
-              <tr>
-                  <td className = "sentences">D. Ireland, <u>V. Bochenek, D. Chaiken,</u> C. Rabeler, <u>S. Onoe</u>, A. Soni, and E.-M. S. Collins
-                  (2020), <i>Dugesia japonica is the best suited of three planarian species for high-throughput toxicology screening</i>.
-                      Chemosphere, PMID: 32298908.</td>
-                  <td><form action="https://www.biorxiv.org/content/10.1101/2020.01.23.917047v1.full.pdf" target="_blank">
-                        <button className="PDF">PDF</button>
-                      </form></td>
-              </tr>
+              <useMediaQuery minDeviceWidth={724}>
+                <tr>
+                    <td className = "sentences">D. Ireland, <u>V. Bochenek, D. Chaiken,</u> C. Rabeler, <u>S. Onoe</u>, A. Soni, and E.-M. S. Collins
+                    (2020), <i>Dugesia japonica is the best suited of three planarian species for high-throughput toxicology screening</i>.
+                        Chemosphere, PMID: 32298908.</td>
+                    <td><form action="https://www.biorxiv.org/content/10.1101/2020.01.23.917047v1.full.pdf" target="_blank">
+                          <button className="PDF">PDF</button>
+                        </form></td>
+                </tr>
+              </useMediaQuery>
+              <MediaQuery maxWidth={724}>
+                    <tr>
+                      <td className = "sentences-small">D. Ireland, <u>V. Bochenek, D. Chaiken,</u> C. Rabeler, <u>S. Onoe</u>, A. Soni, and E.-M. S. Collins
+                    (2020), <i>Dugesia japonica is the best suited of three planarian species for high-throughput toxicology screening</i>.
+                        Chemosphere, PMID: 32298908.
+                      </td>
+                    </tr>
+                    <tr className="center">
+                      <td>
+                        <form action="https://www.biorxiv.org/content/10.1101/2020.01.23.917047v1.full.pdf" target="_blank">
+                          <button className="PDF">PDF</button>
+                        </form>
+                      </td>
+                    </tr>
+              </MediaQuery>
               <tr>
                   <td className = "sentences"><u>Z. Sabry, A. Ho</u>, D. Ireland, C. Rabeler, O. Cochet-Escartin, and E.-M. S. Collins
                   (2019), <i>Pharmacological or genetic targeting of Transient Receptor Potential (TRP) channels can disrupt the planarian escape response</i>.

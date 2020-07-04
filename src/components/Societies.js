@@ -11,7 +11,7 @@ const Society = (props) => {
                     <div className="logo">
                         <img src={logo} alt={society}/>
                     </div>
-                    <div className="col">
+                    <div className="Scol">
                         <h5 className="subtitle">{society}</h5>
                         <h6 className="link"><a href={link}>{link}</a></h6>
                         <p className="description">{description}</p>

@@ -7,10 +7,11 @@ import People from '../img/GetInvolved/lab_picnic.jpg'
 
 const GetInvolved = () => {
     const isComputer = useMediaQuery({minDeviceWidth: 1224})
+    const isTablet = useMediaQuery({minDeviceWidth: 1024})
     return (
        <div>
           <h1 className = "Header">Get Involved</h1>
-          <table className = "picLayout">
+          <table className = {isTablet ? "picLayout" : "picLayout-small"}>
             <tbody>
               <tr>
                 <td>
